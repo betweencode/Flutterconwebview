@@ -13,7 +13,13 @@ class _InAppWEbViewPageState extends State<InAppWEbViewPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: InAppWebView(initialUrlRequest:URLRequest(url: Uri.parse(widget.urlWebview)),),
+      child: InAppWebView(
+  initialOptions: InAppWebViewGroupOptions(
+        android: AndroidInAppWebViewOptions(
+              useHybridComposition: true
+        )
+    ),
+        initialUrlRequest:URLRequest(url: Uri.parse(widget.urlWebview)),),
     );
   }
 }
