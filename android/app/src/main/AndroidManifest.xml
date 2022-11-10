@@ -2,8 +2,8 @@
     package="com.example.webviewproyecto">
    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="webviewproyecto"
-        android:icon="@mipmap/ic_launcher"
+        android:label="Atiendelos Mx"
+        android:icon="@mipmap/launcher_icon"
         android:usesCleartextTraffic="true">
         <activity
             android:name=".MainActivity"
